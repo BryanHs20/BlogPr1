@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<!--
+	Strongly Typed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Blog de investigación</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="https://blog.infranetworking.com/modelo-cliente-servidor/" target="blank">DESCRIBIR LOS SISTEMAS </a></h1><br>
+							<h1 id="logo"><a href="https://blog.infranetworking.com/modelo-cliente-servidor/" target="blank">CON ARQUITECTURA</a></h1><br>
+							<h1 id="logo"><a href="https://blog.infranetworking.com/modelo-cliente-servidor/" target="blank">CLIENTE/SERVIDOR</a></h1><br>
+							
+
+						<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a class="icon solid fa-home" href="index.html"><span>Inicio</span></a></li>
+								<li><a class="icon solid fa-cog" href="left-sidebar.html"><span>Sistemas de información</span></a></li>
+								<li><a class="icon solid fa-retweet" href="right-sidebar.html"><span>Conexión de redes</span></a></li>
+								<li><a class="icon solid fa-sitemap" href="no-sidebar.html"><span>Referencias</span></a></li>
+							</ul>
+						</nav>
+
+					</div>
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+
+							<!-- Content -->
+								<div id="content" class="col-8 col-12-medium">
+
+									<!-- Post -->
+										<article class="box post">
+											<header>
+												<h2>¿Qué es?</h2>
+											</header>
+											<h3>Arquitectura Cliente/Servidor</h3>
+											<p>Esta arquitectura consiste básicamente en un cliente que 
+												realiza peticiones a otro programa (el servidor) que 
+												le da respuesta. Aunque esta idea se puede aplicar a 
+												programas que se ejecutan sobre una sola computadora
+												es más ventajosa en un sistema operativo multiusuario 
+												distribuido a través de una red de computadoras. 
+											</p>
+											<img src="images/arquitectura-cliente-servidor.jpg"/>
+											
+											<h3>Ventajas</h3>
+											<ol start="1">
+												<li>Acceso centralizado a datos.</li>
+												<li>Mayor facilidad a la hora de administrarlos</li>
+												<li>Incremento de seguridad</li>
+												<li>Sólo es necesario proteger el servidor y la transmisión</li>
+												<li>Facilidad de mantenimiento y escalado</li>
+												<li>La replicación del servidor es transparente a los clientes</li>
+											</ol>
+
+											<h3>Desventajas</h3>
+											<ol start="1">
+												<li>Los datos y la lógica del negocio se mezclan en el  servidor, 
+													lo que afecta a la escalabilidad y la  extensibilidad.</li>
+												<li>Mayor facilidad a la hora de administrarlos</li>
+												<li>Incremento de seguridad</li>
+												<li>Sólo es necesario proteger el servidor y la transmisión</li>
+												<li>Facilidad de mantenimiento y escalado</li>
+												<li>La replicación del servidor es transparente a los clientes</li>
+											</ol>
+
+											<h3>Sistemas en donde se emplea</h3>
+											<ol>
+												<li>Navegar una web funciona basándonos en un cliente web (navegador) y 
+													un servidor web como Apache, Nginx o LiteSpeed</li>
+												<li>Protocolo FTP, funciona de idéntica forma, se utiliza un cliente de FTP 
+													(como Filezilla) para conectar a un servidor FTP (como Pure-FTPD, Proftpd, etc)</li>
+												<li>SSH: es idéntico también, se utiliza un cliente SSH para conectar 
+													al servidor SSH que corre en una red remota.</li>
+												<li>Juegos en red: existen clientes que permiten a jugadores online 
+													jugar desde sus casas conectándose a servidores de juegos remotos.</li>
+											</ol>
+											
+											<h2>Clasificar los sistemas de información de acuerdo con su arquitectura.</h2>
+											<h3>¿Qué son las arquitecturas?</h3>
+											<p>Es un conjunto ordenado de mecanismos que tienen como fin la administración de datos y 
+												de información, de manera que puedan ser recuperados y procesados fácil y rápidamente.</p>
+											<h3>Arquitectura basada en  capas</h3>
+											<p>La arquitectura en capas consta en dividir la aplicación en capas, 
+												con la intención de que cada capa tenga un rol muy definido, como podría ser, una capa 
+												de presentación (UI), una capa de reglas de negocio (servicios) y una capa de acceso a datos (DAO), 
+												sin embargo, este estilo arquitectónico no define cuantas capas debe de tener la aplicación, 
+												sino más bien, se centra en la separación de la aplicación en capas 
+												(Aplica el principio Separación de preocupaciones (SoC)).</p>
+												<img src="images/arquitectura-capas.jpg"/>
+											<h3>Funcionamiento</h3>
+												<ol start="1">
+													<li>Cada capa agrupa funcionalidad relacionada.</li>
+													<li>Las capas se apilan verticalmente entre los usuarios y los datos.</li>
+													<li>La comunicación entre capas es explícita mediante interfaces 
+														bien definidos y débilmente acoplada.</li>
+													<li>Los componentes de una capa sólo pueden interactuar 
+														entre sí o con los de la capa inferior.</li>
+												</ol>
+
+											<h3>Ventajas</h3>
+												<ol start="1">
+													<li>Abstracción: Cada capa se define de forma abstracta 
+														antes de empezar la implementación.</li>
+													<li>Aislamiento: Las capas son independientes. 
+														La tecnología de su implementación 
+														puede variar sin afectar a  las demás.</li>
+													<li>Manejabilidad: Las dependencias son claras y explícitas, con lo que los cambios 
+														son fácilmente localizables</li>
+													<li>Reutilización: Las capas inferiores no 
+														tienen dependencias con las superiores, permitiendo su uso potencial  
+														en otros escenarios</li>
+												</ol>
+
+												<h3>Desventajas</h3>
+												<ol start="1">
+													<li>Cambios en los niveles inferiores pueden provocar  
+														cambios en los niveles superiores</li>
+													<li>Aumento en el coste de desarrollo debido a 
+														la necesidad  de implementar nueva funcionalidad 
+														en todas las capas</li>
+													<li>Problemas de rendimiento debido a 
+														la sobrecarga de  llamadas entre las capas.</li>
+												</ol>
+										</article>
+										
+										<article class="box post">
+											<h2>Arquitectura en 3 capas</h2>
+											<h3>¿Qué es?</h3>
+											<p>Es una arquitectura de software de aplicación bien establecida que separa 
+												las aplicaciones en tres niveles de informática lógica y física: el nivel 
+												de presentación o la interfaz de usuario, el nivel de aplicación 
+												o donde se procesan los datos, y el nivel de datos donde se almacenan 
+												y gestionan los datos asociados con la aplicación.
+											</p>
+											<img src="images/arquitectura-3-etapas.jpg"/><br>
+									
+											<h3>Arquitectura orientada a servicios</h3>
+											<p>
+												La arquitectura orientada a los servicios (SOA) 
+												es un tipo de diseño de software que permite reutilizar 
+												sus elementos gracias a las interfaces de servicios que se 
+												comunican a través de una red con un lenguaje común.
+												Un servicio es una unidad autónoma de una o más funciones del 
+												software diseñada para realizar una tarea específica, como recuperar 
+												cierta información o ejecutar una operación. Contiene las 
+												integraciones de datos y código que se necesitan para llevar a cabo 
+												una función empresarial completa y diferenciada. Se puede acceder a 
+												él de forma remota e interactuar con él o actualizarlo de manera 
+												independiente.
+											</p>
+											<span class="image featured"><img src="images/arquitecturas-oob.jpg" alt=""/></span>
+											<p>
+												Su funcionalidad tiene que ir con las siguientes caracteristicas:
+											</p>
+												<ol start="1">
+													<li>Autónomos: Se desarrolla y despliega independientemente/li>
+													<li>Las capas se apilan verticalmente entre los usuarios y los datos.</li>
+													<li>La comunicación entre capas es explícita mediante interfaces 
+														bien definidos y débilmente acoplada.</li>
+													<li>Los componentes de una capa sólo pueden interactuar 
+														entre sí o con los de la capa inferior.</li>
+												</ol>
+
+										</article>
+								</div>
+
+								<div id="sidebar" class="col-4 col-12-medium">
+
+									<!-- Excerpts -->
+										<section>
+											<ul class="divided">
+												<li>
+
+														<article class="box excerpt">
+															<header>
+																<span class="date">Describir los sistemas  con arquitectura cliente/servidor</span>
+																<h3>¿Qué es el cliente/servidor?</h3>
+															</header>
+															<a class="image left"><img src="images/clientee-servidor.jpg" alt="" /></a>
+															<p>Comunmente se llama cliente al dispositivo que requiere ciertos servicios a un servidor.<br>
+																¿Te gustaría concer más?</p>
+															<ul class="actions">
+																<li><a href="https://blog.infranetworking.com/modelo-cliente-servidor/" target="_blank" class="button icon solid fa-file">Click aquí</a></li>
+															</ul>
+														</article>
+
+												</li>
+												<li>
+
+														<article class="box excerpt">
+															<header>
+																<span class="date">
+																	Clasificar los sistemas de información de acuerdo a su arquitectura
+																	</span>
+																<h3>Arquitectura Basada en Capas</h3>
+															</header>
+															<a class="image left"><img src="images/arquitecturas.jpg" alt="" /></a>
+															<p> La arquitectura en capas consta en dividir 
+																la aplicación en capas, con la intención de 
+																que cada capa tenga un rol muy definido.<br>
+																¿Te gustaría conocer más?
+															</p>
+																<ul class="actions">
+																	<li><a href="https://reactiveprogramming.io/blog/es/estilos-arquitectonicos/capas" target="_blank" class="button icon solid fa-file">Click aquí</a></li>
+																</ul>
+														</article>
+
+												</li>
+
+												<li>
+
+														<article class="box excerpt">
+															<header>
+																<span class="date">
+																	Clasificar los sistemas de información de acuerdo a su arquitectura
+																	</span>
+																<h3>Arquitectura Basada en 3 Capas</h3>
+															</header>
+															<href class="image left"><img src="images/arquitecturas.jpg" alt="" /></href>
+															<p> Es una arquitectura de software de aplicación bien establecida que separa 
+																las aplicaciones en tres niveles de informática lógica y física<br>
+																¿Te gustaría conocer más?
+															</p>
+																<ul class="actions">
+																	<li><a href="https://www.ibm.com/mx-es/cloud/learn/three-tier-architecture" target="_blank" class="button icon solid fa-file">Click aquí</a></li>
+																</ul>
+														</article>
+
+												</li>
+
+												<li>
+
+													<article class="box excerpt">
+														<header>
+															<span class="date">
+																Clasificar los sistemas de información de acuerdo a su arquitectura
+																</span>
+															<h3>Arquitectura Orientada a Servicios</h3>
+														</header>
+														<href class="image left"><img src="images/arquitecturas.jpg" alt="" /></href>
+														<p> Les un tipo de diseño de software que permite reutilizar sus elementos 
+															gracias a las interfaces de servicios que se comunican a través de 
+															una red con un lenguaje común.<br>
+															¿Te gustaría conocer más?
+														</p>
+															<ul class="actions">
+																<li><a href="https://www.redhat.com/es/topics/cloud-native-apps/what-is-service-oriented-architecture" target="_blank" class="button icon solid fa-file">Click aquí</a></li>
+															</ul>
+													</article>
+
+											</li>
+											</ul>
+										</section>
+
+								</div>
+
+						</div>
+					</div>
+				</section>
+		</div>
+		
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
